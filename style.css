@@ -1,0 +1,114 @@
+:root{
+	--clr-bg:hsl(0 0% 10%);
+	--clr-main:hsl(50 100% 50%);
+}
+
+/* Estilizações gerais da página */
+body{
+	background-color: var(--clr-bg);
+	margin: 0;
+	padding: 0;
+}
+
+#page{
+	width: 80vw;
+	min-height: 100vh;
+	background-color: darkgrey;
+	margin: auto;
+	border: 2px solid var(--clr-main);
+	box-sizing: border-box;
+}
+
+a{
+	color: goldenrod;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+}
+
+/* Estilizações gerais da página */
+/* Estilizações do header e navbar */
+#div_navbar{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	background-color: var(--clr-bg);
+	padding: 0px;
+}
+
+#navbar{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 5px;
+}
+
+.nav_itens{
+	margin:2px;
+	align-self:flex-start;
+}
+
+.nav_button{
+	width:100%;
+	font-size:large;
+	height: 2em;
+	background-color:var(--clr-main);
+	color: black;
+	border-radius: 6px;
+}
+
+.nav_button:hover{
+	cursor: pointer;
+	color: var(--clr-main);
+	background-color: black;
+	box-shadow: 0 0 0.6em goldenrod;
+	transition: linear 250ms;
+}
+
+/* Estilizações do header e navbar */
+/* Estilizações conteudos */
+.content_container{
+	width: 100%;
+	display: flex;
+	background-color: rgb(44, 44, 44);
+	border-bottom:3px solid goldenrod;
+	justify-content: space-around;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.card{
+	flex:0 1;
+	text-align: center;
+	padding: 2vh 1vw;
+	flex-basis: 30%;
+}
+
+.flexitem{
+	max-width:90%;
+	text-align:center;
+	border: 3px solid goldenrod;
+	border-radius: 15px;
+}
+
+
+/* Estilizações conteudos */
+/* Estilizações do footer */
+#footer{
+	display: flex;
+	background:goldenrod;
+	flex-flow:row wrap;
+	align-content: space-around;
+}
+
+.div_footer{
+	flex-basis: 50%;
+	color:black;
+}
+.footer_subtitle{
+	font-size:2vmax;
+}
+/* Estilizações do footer */
